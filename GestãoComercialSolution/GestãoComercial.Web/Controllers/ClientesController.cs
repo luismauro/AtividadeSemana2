@@ -10,6 +10,7 @@ using GestãoComercial.Web.Models;
 
 namespace GestãoComercial.Web.Controllers
 {
+    [Authorize]
     public class ClientesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

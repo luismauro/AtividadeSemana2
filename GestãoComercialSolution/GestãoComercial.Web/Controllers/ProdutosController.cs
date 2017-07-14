@@ -10,8 +10,9 @@ using GestãoComercial.Web.Models;
 
 namespace GestãoComercial.Web.Controllers
 {
+    [Authorize]
     public class ProdutosController : Controller
-    {
+    {       
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Produtos
